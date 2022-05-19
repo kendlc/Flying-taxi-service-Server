@@ -15,6 +15,6 @@ class UsersController < ApplicationController
 
   private
   def user_params
-    params.require(:user).permit(:email, :first_name, :last_name, :newsletter_a, :newsletter_b, :newsletter_c, :newsletter_d, :sub_daily, :sub_weekly, :sub_monthly)
+    params.require(:user).permit(:first_name, :last_name, :email, :newsletter_a, :newsletter_b, :newsletter_c, :newsletter_d, :sub_daily, :sub_weekly, :sub_monthly)
   end
 end
