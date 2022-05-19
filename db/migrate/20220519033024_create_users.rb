@@ -10,6 +10,8 @@ class CreateUsers < ActiveRecord::Migration[5.2]
       t.boolean :newsletter_b
       t.boolean :newsletter_c
       t.boolean :newsletter_d
+      
+      t.timestamps
     end
   end
 end
