@@ -4,7 +4,8 @@ class UsersController < ApplicationController
     if @user.save
       render json: @user, status: :created
     else
-      render json: @user.errors
+      render :json => { :errors => @user.errors.as_json }, :status => 420
+      
     end  
   end
 
